@@ -1,0 +1,7 @@
+.container {
+    max-width: 60rem;
+    // To distribute width evenly on the left and right side. Section 8, Lecture 67.
+    margin: 0 auto;
+    padding: 0 $m-size;
+    // To fix different screen sizes.
+}

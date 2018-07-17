@@ -1,0 +1,44 @@
+// Big button
+.big-button {
+    background: $pale-yellow;
+    border: none;
+    border-bottom: .6rem solid darken($pale-yellow, 10%);
+    color: white;
+    font-weight: bold;
+    font-size: $l-size;
+    margin-bottom: $m-size;
+    padding: 2.4rem;
+    width: 100%;
+}
+
+.big-button:disabled {
+    opacity: 0.5; // This is to fade out the button when there are no options available.
+}
+
+// Regular button
+.button {
+    background: $pale-yellow;
+    border: none;
+    border-bottom: .3rem solid darken($pale-yellow, 10%);
+    color: white;
+    font-weight: 500;
+    padding: $s-size;
+}
+
+// BEM
+.button--link {
+    // -- is used for button modifiers.
+    //__ is used for elements in button.
+    // More info, see section 8, Lecture 68.
+    background: none;
+    border: none;
+    color: $off-white;
+    padding: 0;
+}
+
+// Mobile
+@media(min-width: $desktop-breakpoint) {
+    .big-button {
+        margin-bottom: $xl-size;
+    }
+}
