@@ -25,7 +25,6 @@
     "webpack-dev-server": "2.5.1"
   },
   "name": "indecision-app",
-  "homepage": "http://pixelshot.github.io/indecision-app",
   "version": "1.0.0",
   "main": "index.js",
   "author": "Pixelshot",
@@ -36,11 +35,7 @@
     "build:prod": "webpack -p --env production",
     "dev-server": "webpack-dev-server",
     "start": "node server/server/js",
-    "heroku-postbuild": "yarn run build:prod",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d public"
+    "heroku-postbuild": "yarn run build:prod"
   },
-  "devDependencies": {
-    "gh-pages": "^1.2.0"
-  }
+  "devDependencies": {}
 }
