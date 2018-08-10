@@ -11,6 +11,7 @@ module.exports = env => {
     entry: "./src/app.js",
     output: {
       path: path.join(__dirname, "public"),
+      // __dirname is the file(which in this case is webpack.config.js)'s current location.
       // For more info on path, see section 6 video #50.
       filename: "bundle.js"
     },
